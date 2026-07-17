@@ -45,26 +45,26 @@ The principle of power acquisition is to place a sampling resistor in series wit
 
 On the OSR-303, `RF7` and `RF8` can be used for voltage/power-trace acquisition, where `RF7` is the output after the signal-amplification module. In general, acquiring through the `RF7` port is sufficient.
 
-We recommend using a `PicoScope` oscilloscope for side-channel acquisition. See [pico3000](https://gitee.com/osr-tech/pico3000) for the device control scripts.
+We recommend using a `PicoScope` oscilloscope for side-channel acquisition. See [pico3000](https://github.com/OSR-Lab/pico3000) for the device control scripts.
 
 <img src="images/_sca.jpg"  width="500">
 
 ## Voltage Short-Circuit Fault Injection
-Voltage short-circuit fault injection momentarily shorts the MCU's core voltage to ground while the MCU is running, disturbing its normal operation and producing errors. Short-circuit fault injection can be achieved with [PowerShorter](https://gitee.com/osr-tech/powershorter).
+Voltage short-circuit fault injection momentarily shorts the MCU's core voltage to ground while the MCU is running, disturbing its normal operation and producing errors. Short-circuit fault injection can be achieved with [PowerShorter](https://github.com/OSR-Lab/powershorter).
 
 Connect the `+` of `PowerShorter` to `JP3` (any pin) and the `-` to `JP4` (any pin), then configure the trigger to perform voltage short-circuit fault injection.
 
 <img src="images/_glitch.jpg"  width="500">
 
 ## Electromagnetic Fault Injection
-Electromagnetic fault injection generates a momentary electromagnetic pulse while the MCU is running, disturbing its normal operation and producing errors. Electromagnetic fault injection can be achieved with [PowerShorter](https://gitee.com/osr-tech/powershorter) and EMPulse.
+Electromagnetic fault injection generates a momentary electromagnetic pulse while the MCU is running, disturbing its normal operation and producing errors. Electromagnetic fault injection can be achieved with [PowerShorter](https://github.com/OSR-Lab/powershorter) and EMPulse.
 
 Connect `E1 or E2` of `PowerShorter` to `EMPulse` and configure the relevant parameters to generate electromagnetic pulses. When the electromagnetic pulse disturbs the MCU to the point where it can no longer operate, the relay on the PowerShorter is needed to perform a hard reset of the target.
 
 <img src="images/emfi.png"  width="500">
 
 ## Clock Fault Injection
-Clock fault injection introduces illegal clock glitches while the MCU is running, disturbing its normal operation and producing errors. Clock fault injection can be achieved with [PowerShorter](https://gitee.com/osr-tech/powershorter) and CycleWarper.
+Clock fault injection introduces illegal clock glitches while the MCU is running, disturbing its normal operation and producing errors. Clock fault injection can be achieved with [PowerShorter](https://github.com/OSR-Lab/powershorter) and CycleWarper.
 
 
 
