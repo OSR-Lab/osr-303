@@ -5,6 +5,8 @@ The OSR-303 hardware security evaluation board is a development and evaluation b
 
 The core of the OSR-303 evaluation board is the STM32F303RCT6 chip, based on the ARM Cortex-M4 architecture. The board provides serial-port and debugging functionality: a single USB cable is enough for host-computer communication, program downloading, and debugging, greatly simplifying the effort of setting up the environment.
 
+> **You can purchase the OSR-303 board from the [OSR Lab Store](https://www.aliexpress.com/store/1105844326) on AliExpress.**
+
 The main specifications of the OSR-303 are listed in the table below:
 
 | Microprocessor | STM32F303RCT6 |
