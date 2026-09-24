@@ -51,10 +51,10 @@ We recommend using a `PicoScope` oscilloscope for side-channel acquisition. See 
 
 <img src="images/_sca.jpg"  width="500">
 
-## Voltage Short-Circuit Fault Injection
-Voltage short-circuit fault injection momentarily shorts the MCU's core voltage to ground while the MCU is running, disturbing its normal operation and producing errors. Short-circuit fault injection can be achieved with [PowerShorter](https://github.com/OSR-Lab/powershorter).
+## Voltage Crowbar Fault Injection
+Voltage crowbar fault injection momentarily shorts the MCU's core voltage to ground while the MCU is running, disturbing its normal operation and producing errors. Crowbar fault injection can be achieved with [PowerShorter](https://github.com/OSR-Lab/powershorter).
 
-Connect the `+` of `PowerShorter` to `JP3` (any pin) and the `-` to `JP4` (any pin), then configure the trigger to perform voltage short-circuit fault injection.
+Connect the `+` of `PowerShorter` to `JP3` (any pin) and the `-` to `JP4` (any pin), then configure the trigger to perform voltage crowbar fault injection.
 
 <img src="images/_glitch.jpg"  width="500">
 
